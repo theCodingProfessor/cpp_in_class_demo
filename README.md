@@ -8,7 +8,7 @@ Lab 10 In Class Project Showing C++ for integratrion with CLion
 4) Using a local IDE (code editor), clone the project.
 5) Create a Branch inside the code editor
 6) Create three files (four if you need a CMake text file)
- > Class File, Header File, main (driver file) CMake
+   Class File, Header File, main (driver file) CMake
 7) Commit the Changes to the local branch
 8) Create a pull request (communicate with the server)
 9) Merge the Local Repo with the Online Repo
