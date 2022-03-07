@@ -4,11 +4,34 @@
 
 #include <iostream>
 using namespace std;
-#include "Dog.h";
+#include "Animal.h"
+#include "Dog.h"
 
 int main(){
 
-    cout << "Bark Bark" << endl;
+    Animal Bears("Bears",50,"honey");
+    cout << "\n\t" << Bears.get_species() << " eat " << Bears.get_food() << "." << endl;
+    cout << "\t" << Bears.get_species() << " live for " << Bears.get_lifespan() << " years." << endl;
+
+    Animal Dogs("Dogs",15,"cookies");
+    cout << "\n\t" << Dogs.get_species() << " eat " << Dogs.get_food() << "."  << endl;
+    cout << "\t" << Dogs.get_species() << " live for " << Dogs.get_lifespan() << " years." << endl;
+
+//    Dog Collie(std::string(), 0, std::string(), "Collie", 40, 20, "Bark", "High Five", Dogs);
+    Dog Golden("Golden Retriever", 50, 23, "Ruff", "fetch", "K9", 14, "Salmon");
+
+    cout << "\n\tA " << Golden.get_breed() << " plays " << Golden.get_tricks() <<
+    ", stands " << Golden.get_height() << " inches tall and weighs " << Golden.get_weight() << " pounds." << endl;
+
+    // We cannot access the protected function call of the Inherited Class
+    cout << "\tA " << Golden.get_animal_species() << " eats " << Golden.get_animal_food()
+    << " and lives for " << Golden.get_animal_life() << " years." << endl;
+
+    // We cannot access the protected function call of the Inherited Class
+//    cout << "\n\t" << Golden.get_species() << " eat " << Golden.get_food()
+//    << "\t" << Golden.get_species() << " live for " << Golden.get_lifespan() << " years." << endl;
+
+
     return 0;
 }
 
