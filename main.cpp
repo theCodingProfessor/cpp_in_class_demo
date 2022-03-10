@@ -27,11 +27,20 @@ int main(){
     cout << "\tA " << Golden.get_animal_species() << " eats " << Golden.get_animal_food()
     << " and lives for " << Golden.get_animal_life() << " years." << endl;
 
-    // We cannot access the protected function call of the Inherited Class
-//    cout << "\n\t" << Golden.get_species() << " eat " << Golden.get_food()
-//    << "\t" << Golden.get_species() << " live for " << Golden.get_lifespan() << " years." << endl;
+    cout << "Golden Species: " << Golden.species << endl;
 
+    // the only way to go after 'protected or private data members is to use a method
+    // these do not work
+    //cout << "Golden Species: " << Golden.eats << endl;
+    //cout << "Golden Species: " << Golden.life_span << endl;
+    cout << "Golden Food Preference: " << Golden.get_animal_food() << endl;
+    cout << "Golden Species: " << Golden.get_animal_life() << endl;
 
+//    // We cannot access the protected function call of the Inherited Class
+////    cout << "\n\t" << Golden.get_species() << " eat " << Golden.get_food()
+////    << "\t" << Golden.get_species() << " live for " << Golden.get_lifespan() << " years." << endl;
+//
+//
     return 0;
 }
 

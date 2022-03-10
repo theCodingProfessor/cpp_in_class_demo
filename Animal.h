@@ -23,11 +23,12 @@ public:
     void set_species(std::string);
     void set_food(std::string);
 
-protected:
-
     std::string species; // common name
+protected:
     int life_span; // in years (integer)
+private:
     std::string eats; // preferred food
+
 };
 
 
